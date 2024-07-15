@@ -286,7 +286,17 @@ const emojis = [
     }
   
     // Add keyboard controls
-    document.onkeydown = (event) => {};
+    document.onkeydown = (event) => {
+        // if B key is pressed
+        if (event.key === "b") {
+            playAndSendNote(emojiId, "brick");
+        }
+
+        // if H key is pressed
+        if (event.key === "h") {
+            playAndSendNote(emojiId, "house");
+        }
+    };
   }
   
   init();
